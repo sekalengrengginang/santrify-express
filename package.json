@@ -1,0 +1,16 @@
+{
+  "name": "santrify-backend-express",
+  "version": "1.0.0",
+  "description": "rewrite santrify backend in express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch ./src/index.js"
+  },
+  "author": "dreamyuki",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.9.1",
+    "express": "^4.18.2",
+    "prisma": "^5.9.1"
+  }
+}
