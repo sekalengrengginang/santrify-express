@@ -11,8 +11,7 @@
 
 	// For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
 	"forwardPorts": [
-		3306,
-		3000
+		3306
 	],
 	"features": {
 		

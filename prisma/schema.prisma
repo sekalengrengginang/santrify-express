@@ -15,23 +15,30 @@ model User {
   name String @unique
   email String @unique
   password String 
+  isAdmin Boolean
 }
 
-model Santri {
+model Santri{
   id Int @id @default(autoincrement())
   name String
   room String
-  class String 
+  classroom String
+  status String @db.Text
+}
+model Teachers{
+  id Int @id @default(autoincrement())
+  name String
+  room String
+  status String @db.Text
+}
+model Rooms{
+  id Int @id @default(autoincrement())
+  name String
   status String @db.Text
 }
 
-model Room{
+model Classroom{
   id Int @id @default(autoincrement())
   name String
-  status String
-}
-
-model Class{
-  id Int @id
-  
+  status String @db.Text
 }
