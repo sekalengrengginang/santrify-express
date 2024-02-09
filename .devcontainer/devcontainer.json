@@ -11,7 +11,8 @@
 
 	// For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
 	"forwardPorts": [
-		3306
+		3306,
+		3000
 	],
 	"features": {
 		
@@ -26,7 +27,8 @@
 				"oderwat.indent-rainbow",
 				"Prisma.prisma",
 				"esbenp.prettier-vscode",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"Gruntfuggly.todo-tree"
 			]
 		}
 	}

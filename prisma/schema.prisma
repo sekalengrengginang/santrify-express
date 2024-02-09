@@ -10,35 +10,38 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// TODO relationship one to many
 model User {
-  id   Int  @id @default(autoincrement())
-  name String @unique
-  email String @unique
-  password String 
-  isAdmin Boolean
+  id       Int  @id @default(autoincrement())
+  name     String  @unique
+  email    String  @unique
+  password String
 }
 
-model Santri{
-  id Int @id @default(autoincrement())
-  name String
-  room String
-  classroom String
-  status String @db.Text
-}
-model Teachers{
-  id Int @id @default(autoincrement())
-  name String
-  room String
-  status String @db.Text
-}
-model Rooms{
-  id Int @id @default(autoincrement())
-  name String
-  status String @db.Text
+model Santri {
+  id     String  @id @default(uuid())
+  name   String
+  image  String
+  room   String
+  status String? @db.Text
 }
 
-model Classroom{
-  id Int @id @default(autoincrement())
-  name String
-  status String @db.Text
+model Teachers {
+  id     String  @id @default(uuid())
+  name   String
+  room   String
+  status String? @db.Text
+}
+
+model Rooms {
+  id     String  @id @default(uuid())
+  name   String
+  status String? @db.Text
+}
+
+model Classroom {
+  id     String  @id @default(uuid())
+  name   String
+  image  String
+  status String? @db.Text
 }
