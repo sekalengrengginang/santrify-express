@@ -12,9 +12,9 @@ datasource db {
 
 // TODO relationship one to many
 model User {
-  id       Int  @id @default(autoincrement())
-  name     String  @unique
-  email    String  @unique
+  id       Int    @id @default(autoincrement())
+  name     String @unique
+  email    String @unique
   password String
 }
 
@@ -40,8 +40,7 @@ model Rooms {
 }
 
 model Classroom {
-  id     String  @id @default(uuid())
+  id     Int     @id @default(autoincrement())
   name   String
-  image  String
   status String? @db.Text
 }
