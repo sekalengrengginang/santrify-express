@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router();
 const santriControllers = require('../controllers/santriController')
+const authValid = require('../middleware/authMiddle')
 
 router.route('/santri')
     .get(santriControllers.get_all_santri)

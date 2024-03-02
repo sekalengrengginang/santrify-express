@@ -15,6 +15,7 @@ app.use(santriRoute);
 app.use(classroomRoute);
 app.use(teacherRoute)
 app.use(userRoute);
+
 // default homepage
 app.get('/', (req, res) => {
   res.send('index page')

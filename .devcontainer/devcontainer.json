@@ -15,6 +15,7 @@
 		3000
 	],
 	"features": {
+		"ghcr.io/devcontainers-contrib/features/starship:1": {}
 		
 	},
 	"customizations": {
@@ -28,7 +29,8 @@
 				"Prisma.prisma",
 				"esbenp.prettier-vscode",
 				"ritwickdey.LiveServer",
-				"Gruntfuggly.todo-tree"
+				"Gruntfuggly.todo-tree",
+				"rangav.vscode-thunder-client"
 			]
 		}
 	}
